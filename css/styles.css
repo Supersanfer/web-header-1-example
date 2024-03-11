@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+.imagen-header{
+    display: flex;
+    width: 80px;
+    height: auto;
+}
+.header{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.menu-header p{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 520px;
+    margin-left: 50px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.menu-header i{
+    height: auto;
+    margin: auto;
+    justify-content: left;
+}
+.menu-header{
+    display: block;
+    margin: 10px auto;
+    width: 700px;
+}
+.menu-header hr{
+    margin-top: -10px;
+    width: auto;
+    border: 0; 
+    height: 1px;
+    background: radial-gradient(circle, black 40%, white 90%);
+}
+/* ------------------------cololes links----------------------- */
+.menu-header a:link, .menu-header a:visited, .menu-header a:active {
+    color: #000; 
+    transition: color 0.2s; 
+}
+
+.menu-header a:hover {
+    color: rgb(147, 243, 206); 
+}
+.imagen-header img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.imagen-header:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width:750px){
+    .header{
+        flex-direction: column;
+    }
+    .imagen-header{
+        justify-content: center;
+    }
+}
